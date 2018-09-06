@@ -6,6 +6,7 @@
 ul {
     display: flex;
     list-style: none;
+    flex-direction: column;
 }
 
 li {
@@ -22,9 +23,18 @@ a {
     background-color: #444;
     color: white;
     padding: 20px;
-    margin: 15px;
 }
 
 a:hover {
     background-color: black;
+}
+
+@media (min-width: 1025px) {
+    ul {
+        flex-direction: row;
+    }
+
+    a {
+        margin: 15px;
+    }
 }
